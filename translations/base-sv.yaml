@@ -53,9 +53,9 @@ global:
         shift: SKIFT
         space: MELLANSLAG
     loggingIn: Loggar in
-    loadingResources: Downloading additional resources (<percentage> %)
+    loadingResources: Laddar ner ytterligare resurser (<percentage> %)
     discount: -<percentage>%
-    discountSummerSale: SPECIAL PROMOTION! Offer ends 7 July
+    discountSummerSale: SPECIALERBJUDANDE! Erbjudande slut 7:e juli
 demoBanners:
     title: Demo-version
     intro: |-
@@ -98,14 +98,14 @@ mainMenu:
     puzzleDlcWishlist: Önskelista nu!
     puzzleDlcViewNow: Se DLC
     mods:
-        title: Active Mods
-        warningPuzzleDLC: Playing the Puzzle DLC is not possible with mods. Please
-            disable all mods to play the DLC.
-    playingFullVersion: You are now playing the full version!
-    logout: Logout
-    noActiveSavegames: No active savegames found - Click play to start a new game!
-    playFullVersionV2: Bough shapez on Steam? Play the full version in your Browser!
-    playFullVersionStandalone: You can now also play the full version in your Browser!
+        title: Aktiva Mods
+        warningPuzzleDLC: Det går inte att spela Puzzle DLC med mods. Var vänlig
+            stäng av alla mods för att spela DLC:t.
+    playingFullVersion: Du spelar nu fullversionen!
+    logout: Logga ut
+    noActiveSavegames: Inga aktiva sparade spel hittade - Tryck på NYTT SPEL för att spela!
+    playFullVersionV2: Köpt Shapez på Steam? Spela fullversionen i din webbläsare!
+    playFullVersionStandalone: Du kan nu också spela fullversionen i din webbläsare!
 dialogs:
     buttons:
         ok: OK
@@ -247,10 +247,10 @@ dialogs:
             att du har en aktiv internetanslutning.
     puzzleDownloadError:
         title: Nedladdningsfel
-        desc: "Failed to download the puzzle:"
+        desc: "Det gick inte att ladda ner pusslet:"
     puzzleSubmitError:
         title: Submission Error
-        desc: "Det gick inte att ladda ner pusslet:"
+        desc: "Det gick inte att ladda upp pusslet:"
     puzzleSubmitOk:
         title: Pussel publicerat
         desc: Grattis! Ditt pussel har publicerats och kan nu spelas av andra. Du kan nu
@@ -272,9 +272,9 @@ dialogs:
     puzzleReport:
         title: Anmäl Pussel
         options:
-            profane: Vanhelga
+            profane: Svordomar
             unsolvable: Inte lösbart
-            trolling: Trolling
+            trolling: Trollande
     puzzleReportComplete:
         title: Tack för din feedback!
         desc: Pusslet har flaggats.
@@ -288,36 +288,34 @@ dialogs:
         title: Radera Pussel?
         desc: Är du säker på att du vill ta bort '<title>'? Detta kan inte ångras!
     modsDifference:
-        title: Mod Warning
-        desc: The currently installed mods differ from the mods the savegame was created
-            with. This might cause the savegame to break or not load at all. Are
-            you sure you want to continue?
-        missingMods: Missing Mods
-        newMods: Newly installed Mods
+        title: Modvarning
+        desc: Installerade mods skiljer sig från modsen som denna sparfil skapades med.
+            Detta kan orsaka att sparfilen går sönder eller inte fungerar alls. Är du 
+            säker på att du vill fortsätta?
+        missingMods: Saknade mods
+        newMods: Nyinstallerade mods
     resourceLoadFailed:
-        title: Resources failed to load
-        demoLinkText: shapez demo on Steam
-        descWeb: "One ore more resources could not be loaded. Make sure you have a
-            stable internet connection and try again. If this still doesn't
-            work, make sure to also disable any browser extensions (including
-            adblockers).<br><br> As an alternative, you can also play the
-            <demoOnSteamLinkText>. <br><br> Error Message:"
-        descSteamDemo: "One ore more resources could not be loaded. Try restarting the
-            game - If that does not help, try reinstalling and verifying the
-            game files via Steam. <br><br> Error Message:"
+        title: Misslyckad laddning av resurser
+        demoLinkText: shapez demo på Steam
+        descWeb: "En eller flera resurser kunde inte laddas. Säkerställ att du
+            har en stabil internetuppkoppling och försök igen. Om det fortfarande inte 
+            fungerar, stäng av eventuella plugins i din webbläsare (inklusive adblockers)
+            <br><br> Alternativt kan du spela <demoOnSteamLinkText>. <br><br> Felmeddelande:"
+        descSteamDemo: "En eller flera resurser kunde inte laddas. Pröva att starta om 
+            spelet - Om det inte hjälper, pröva att ominstallera och verifiera spelfilerna
+            via Steam.<br><br> Felmeddelande:"
     steamSsoError:
-        title: Full Version Logout
-        desc: You have been logged out from the Full Browser Version since either your
-            network connection is unstable or you are playing on another
-            device.<br><br> Please make sure you don't have shapez open in any
-            other browser tab or another computer with the same Steam
-            account.<br><br> You can login again in the main menu.
+        title: Fullversion utloggad
+        desc: Du har blivit utloggad från fullversionen för webbläsare då du 
+            antingen har en instabil uppkoppling eller så spelar du på en annan enhet.
+            <br><br>Var god säkerställ att du inte har shapez öppet i en annan flik 
+            eller en annan dator med samma Steamkonto.<br><br> Du kan logga in igen 
+            i huvudmenyn.
     steamSsoNoOwnership:
-        title: Full Edition not owned
-        desc: In order to play the Full Edition in your Browser, you need to own both
-            the base game and the Puzzle DLC on your Steam account.<br><br>
-            Please make sure you own both, signed in with the correct Steam
-            account and then try again.
+        title: Fullversion inte ägd
+        desc: För att spela fullversionen i din webbläsare behöver du äga både 
+        basspelet och Puzzle DLC på ditt Steamkonto.<br><br> Var god säkerställ att
+        du äger båda, är inloggad på rätt Steamkonto och försök igen. 
 ingame:
     keybindingsOverlay:
         moveMap: Flytta
@@ -485,23 +483,23 @@ ingame:
                 title: Achievements
                 desc: Hunt them all!
             mods:
-                title: Modding support!
-                desc: Over 80 mods available!
-        titleV2: "Get the full version now on Steam to unlock:"
-        titleExpiredV2: Demo completed!
-        titleEnjoyingDemo: Enjoy the demo?
+                title: Support för mods!
+                desc: Över 80 mods tillgängliga!
+        titleV2: "Skaffa fullversionen nu på Steam för att låsa upp:"
+        titleExpiredV2: Demo slutförd!
+        titleEnjoyingDemo: Gillade du demon?
     puzzleEditorSettings:
-        zoneTitle: Zone
-        zoneWidth: Width
-        zoneHeight: Height
-        trimZone: Trim
-        clearItems: Clear Items
-        share: Share
-        report: Report
-        clearBuildings: Clear Buildings
-        resetPuzzle: Reset Puzzle
+        zoneTitle: Zon
+        zoneWidth: Bredd
+        zoneHeight: Höjd
+        trimZone: Trimma
+        clearItems: Nollställ föremål
+        share: Dela
+        report: Rapportera
+        clearBuildings: Nollställ byggnader
+        resetPuzzle: Nollställ pussel
     puzzleEditorControls:
-        title: Puzzle Creator
+        title: Pusselskaparen
         instructions:
             - 1. Place <strong>Constant Producers</strong> to provide shapes and
               colors to the player
